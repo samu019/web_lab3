@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+<h2>Добро пожаловать{% if current_user.is_authenticated %}, {{ current_user.username }}{% endif %}!</h2>
+{% endblock %}
